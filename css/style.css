@@ -1,8 +1,7 @@
 
-header {
-    background-color: #2C3E50;
-}
 
+
+/* height */
 .test-height-50 {
     min-height: 50px;
 }
@@ -17,4 +16,19 @@ header {
 }
 .test-height-500 {
     min-height: 500px;
+}
+
+
+/* background */
+
+.background-blue {
+    background-color: #2C3E50;
+}
+
+.background-green {
+    background-color: #1ABC9C;
+}
+
+.background-white {
+    background-color: white;
 }
