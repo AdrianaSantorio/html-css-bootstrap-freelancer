@@ -22,17 +22,24 @@
     <!-- main -->
     <main>
          <!-- Jumbotron -->
+         <!-- ricordati che i nomi è in effetti più intelligente metterli come id -->
         <section class="jumbotron background-green">
+            <!-- non essendo necessario il container potremmo usare il container-fluid, anche non come classe separata -->
             <div class="container">
+                <!-- e quindi in realtà non abbiamo bisogno ne di row ne di col -->
                 <div class="row justify-content-center p-4 p-md-5">
-                    <div class="col-12 col-lg-8 col-xxl-6 test-height-300 background-blue"></div>
+                    <!-- tutta sta cosa che ho fatto di base è inutile perchè questa è solo una cosa centrata -->
+                    <div class="col-lg-8 col-xxl-6 test-height-300 background-blue"></div>
                 </div>
             </div> 
         </section>
         <!-- Portfolio -->
         <section class="portfolio background-white">
             <div class="container">
+                <!-- io non ho capito perchè i titoli ho pensato di non doverli mettere -->
+                <!-- e in questo esercizio non c' entrava niente il margine -->
                 <div class="row my-5">
+                    <!-- quindi siccome qui non ci dovevo mettere la figure, dovevo mettere col-12 come cosa iniziale -->
                     <div class="col-lg-6 col-xxl-4">
                         <figure class="background-red test-height-200"></figure>
                     </div>
@@ -58,12 +65,15 @@
         <section class="about background-green test-height-100">
             <div class="container">
                 <div class="row justify-content-center py-5">
+                    <!-- usando invece l' offset uso uno strumento più specifico per row e col e ho più controllo -->
                     <div class="col-8 col-lg-4 test-height-50 background-blue text-white">text</div>
                     <div class="col-8 col-lg-4 test-height-50 background-blue text-white">text</div>
                 </div>
             </div>
         </section>
         <!-- Contact Me -->
+        <!-- in effetti location poteva andare sotto contacts -->
+        <!--  e allora dare qui lo stesso offset che abbiamo dato qui, e anche la stessa grandezza di colonna -->
         <section class="contact-me">
             <div class="container">
                 <div class="row justify-content-center py-5">
@@ -72,9 +82,12 @@
             </div>
         </section>
         <!-- Location -->
+        <!-- o invece location può far parte del footer come avevo pensato inizialmente e quindi fare footer top e bottom -->
         <section class="location background-blue">
             <div class="container">
                 <div class="row justify-content-center py-5 text-center">
+                    <!-- siccome non sto mettendo i contenuti  -->
+                    <!-- facendo come ho fatto io, andiamo a perdere quelle proprietà di flex shrink 0, flex grow 0 e flex basis auto etc che sono comuni a tutte le colonne -->
                     <div class="col-lg-4 test-height-50 text-white">text</div>
                     <div class="col-lg-4 test-height-50 text-white">text</div>
                     <div class="col-lg-4 test-height-50 text-white">text</div>
@@ -84,6 +97,7 @@
     </main>
     <!-- Footer -->
     <footer class="background-blue ">
+        <!-- qui si poteva non mettere assolutamente niente -->
         <div class="container">
             <div class="row py-5 justify-content-center">
                 <div class="col-auto text-white">text</div>
