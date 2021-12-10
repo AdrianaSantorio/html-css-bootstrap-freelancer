@@ -1,38 +1,40 @@
 
 
+.container {
+    border: 3px solid black;
+}
 
-/* height */
-.test-height-50 {
-    min-height: 50px;
+.container-fluid {
+    border: 3px solid red;
 }
-.test-height-100 {
-    min-height: 100px;
+
+header {
+    min-height: 80px;
 }
-.test-height-200 {
-    min-height: 200px;
-}
-.test-height-300 {
-    min-height: 300px;
-}
-.test-height-500 {
+
+section {
     min-height: 500px;
 }
 
+[class^='col'] {
+    border: 2px solid orange;
+    min-height: 50px;
+}
 
 /* background */
 
-.background-blue {
+.bg-blue {
     background-color: #2C3E50;
 }
 
-.background-green {
+.bg-green {
     background-color: #1ABC9C;
 }
 
-.background-white {
+.bg-white {
     background-color: white;
 }
 
-.background-red {
+.bg-red {
     background-color: #BA4B63 ;
 }

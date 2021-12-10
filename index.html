@@ -9,100 +9,89 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Header -->
-    <header class="background-blue">
+    <!-- header -->
+    <header>
         <div class="container">
-            <div class="row p-y">
-                <div class="col text-start text-white test-height-50">text</div>
-                <div class="col text-end text-white test-height-50 d-sm-none">text</div>
-                <div class="col text-end d-none d-sm-block text-white"> text text text</div>
+            <div class="row">
+                <div class="col">text</div>
+                <div class="col d-lg-none">text</div>
+                <div class="col d-none d-lg-block">second text</div>
             </div>
         </div>
     </header>
     <!-- main -->
     <main>
-         <!-- Jumbotron -->
-         <!-- ricordati che i nomi è in effetti più intelligente metterli come id -->
-        <section class="jumbotron background-green">
-            <!-- non essendo necessario il container potremmo usare il container-fluid, anche non come classe separata -->
-            <div class="container">
-                <!-- e quindi in realtà non abbiamo bisogno ne di row ne di col -->
-                <div class="row justify-content-center p-4 p-md-5">
-                    <!-- tutta sta cosa che ho fatto di base è inutile perchè questa è solo una cosa centrata -->
-                    <div class="col-lg-8 col-xxl-6 test-height-300 background-blue"></div>
-                </div>
-            </div> 
-        </section>
-        <!-- Portfolio -->
-        <section class="portfolio background-white">
-            <div class="container">
-                <!-- io non ho capito perchè i titoli ho pensato di non doverli mettere -->
-                <!-- e in questo esercizio non c' entrava niente il margine -->
-                <div class="row my-5">
-                    <!-- quindi siccome qui non ci dovevo mettere la figure, dovevo mettere col-12 come cosa iniziale -->
-                    <div class="col-lg-6 col-xxl-4">
-                        <figure class="background-red test-height-200"></figure>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4">
-                        <figure class="background-red test-height-200"></figure>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4">
-                        <figure class="background-red test-height-200"></figure>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4">
-                        <figure class="background-red test-height-200"></figure>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4">
-                        <figure class="background-red test-height-200"></figure>
-                    </div>
-                    <div class="col-lg-6 col-xxl-4">
-                        <figure class="background-red test-height-200"></figure>
-                    </div>
+        <!-- jumbotron -->
+        <section id="jumbotron" class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    jumbotron
                 </div>
             </div>
         </section>
+        <!-- Portfolio -->
+        <section id="portfolio" class="container">
+            <!-- section title -->
+            <div class="row">
+                <div class="col"> Portfolio</div>
+            </div>
+            <!-- gallery -->
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">immagine</div>
+                <div class="col-12 col-md-6 col-lg-4">immagine</div>
+                <div class="col-12 col-md-6 col-lg-4">immagine</div>
+                <div class="col-12 col-md-6 col-lg-4">immagine</div>
+                <div class="col-12 col-md-6 col-lg-4">immagine</div>
+                <div class="col-12 col-md-6 col-lg-4">immagine</div>
+            </div>
+        </section>
         <!-- About -->
-        <section class="about background-green test-height-100">
+        <section id="About">
             <div class="container">
-                <div class="row justify-content-center py-5">
-                    <!-- usando invece l' offset uso uno strumento più specifico per row e col e ho più controllo -->
-                    <div class="col-8 col-lg-4 test-height-50 background-blue text-white">text</div>
-                    <div class="col-8 col-lg-4 test-height-50 background-blue text-white">text</div>
+                    <!-- section title -->
+                <div class="row">
+                    <div class="col">About</div>
+                </div>
+                <!-- text -->
+                <div class="row">
+                    <div class="col-10 offset-1 col-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit rerum dicta ut laborum in ipsa, obcaecati accusamus magni nemo. Assumenda voluptatum eligendi incidunt vel est ullam nisi! Perspiciatis, consequatur officiis?</div>
+                    <div class="col-10 offset-1 col-md-5 offset-md-0 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, porro molestias ab asperiores cumque error. Est cum quasi tempora nam atque alias. Laborum eum sunt ipsam unde ab nulla quam.</div>
+                </div>
+                <!-- button -->
+                <div class="row">
+                    <div class="col">button</div>
                 </div>
             </div>
         </section>
         <!-- Contact Me -->
-        <!-- in effetti location poteva andare sotto contacts -->
-        <!--  e allora dare qui lo stesso offset che abbiamo dato qui, e anche la stessa grandezza di colonna -->
-        <section class="contact-me">
+        <section id="contact-me">
             <div class="container">
-                <div class="row justify-content-center py-5">
-                    <div class="col-8 background-blue test-height-50"> text</div>
+                <div class="row">
+                    <div class="col">contact me + stellina</div>
                 </div>
-            </div>
-        </section>
-        <!-- Location -->
-        <!-- o invece location può far parte del footer come avevo pensato inizialmente e quindi fare footer top e bottom -->
-        <section class="location background-blue">
-            <div class="container">
-                <div class="row justify-content-center py-5 text-center">
-                    <!-- siccome non sto mettendo i contenuti  -->
-                    <!-- facendo come ho fatto io, andiamo a perdere quelle proprietà di flex shrink 0, flex grow 0 e flex basis auto etc che sono comuni a tutte le colonne -->
-                    <div class="col-lg-4 test-height-50 text-white">text</div>
-                    <div class="col-lg-4 test-height-50 text-white">text</div>
-                    <div class="col-lg-4 test-height-50 text-white">text</div>
+                <div class="row">
+                    <div class="col-10 offset-1">form</div>
                 </div>
             </div>
         </section>
     </main>
-    <!-- Footer -->
-    <footer class="background-blue ">
-        <!-- qui si poteva non mettere assolutamente niente -->
-        <div class="container">
-            <div class="row py-5 justify-content-center">
-                <div class="col-auto text-white">text</div>
+    <!-- footer -->
+    <footer>
+        <!-- upper footer -->
+        <section id="upper-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">text</div>
+                    <div class="col-12 col-md-4">text</div>
+                    <div class="col-12 col-md-4">text</div>
+                </div>
             </div>
-        </div>
+        </section>
+        <!-- bottom footer -->
+        <section id="bottom-footer">
+            text
+        </section>
     </footer>
+        
 </body>
 </html>
