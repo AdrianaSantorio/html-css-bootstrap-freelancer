@@ -1,4 +1,4 @@
-
+/* 
 
 .container {
     border: 3px solid black;
@@ -19,7 +19,7 @@ section {
 [class^='col'] {
     border: 2px solid orange;
     min-height: 50px;
-}
+} */
 
 /* background */
 
@@ -38,3 +38,4 @@ section {
 .bg-red {
     background-color: #BA4B63 ;
 }
+
