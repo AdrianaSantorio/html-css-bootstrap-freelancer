@@ -21,6 +21,29 @@ section {
     min-height: 50px;
 } */
 
+/* UTILITIES */
+
+/* font */
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+
+
+/* bar */
+.bar {
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    margin: 0 10px;
+    width: 10%;
+}
+
 /* background */
 
 .bg-blue {
@@ -37,5 +60,13 @@ section {
 
 .bg-red {
     background-color: #BA4B63 ;
+}
+
+/* MAIN */
+
+/* jumbotron */
+
+#jumbotron img {
+    width: 250px;
 }
 
