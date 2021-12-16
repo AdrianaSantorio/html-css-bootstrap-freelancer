@@ -66,10 +66,11 @@
         <!-- Portfolio -->
         <section id="portfolio" class="py-5">
             <div class="container">
-                <!-- section title -->
                 <div class="row">
                     <div class="col text-center text-uppercase text-d-gray fw-600">
+                        <!-- section title -->
                         <h2>Portfolio</h2>
+                        <!-- star-rule -->
                         <div class="star-rule d-flex justify-content-center align-items-center my-4">
                             <div class="bar bg-d-gray"></div>
                             <i class="bi bi-star-fill fs-3"></i>
@@ -164,14 +165,25 @@
                 <div class="row">
                     <div class="col-10 offset-1">
                         <!-- Form -->
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control">
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                            <textarea class="form-control" " rows="3"></textarea>
-                        </div>
+                        <form class="fw-500 fs-5">
+                            <div class="mb-3">
+                              <label for="name" class="form-label">Name</label>
+                              <input type="text" class="form-control" id="name" name="name">
+                            </div>
+                            <div class="mb-3">
+                              <label for="email" class="form-label">Email address</label>
+                              <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="tel" name="tel">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message"></textarea>
+                            </div>
+                            <button type="submit" class="btn bg-green text-white fw-500">Send</button>
+                          </form>
                     </div>
                 </div>
             </div>
@@ -184,7 +196,8 @@
             <div class="container">
                 <div class="row gy-3">
                     <div class="col-12 col-md">
-                        <h4 class="text-uppercase">about freelancer</h4>
+                        <!-- Address -->
+                        <h4 class="text-uppercase">location</h4>
                         <p class="text-capitalize fs-5">2215 john daniel drive clark, MO 54243</p>
                     </div>
                     <div id="social" class="col-12 col-md flex-shrink-0">
@@ -206,6 +219,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md">
+                        <!-- about freelancer -->
                         <h4 class="text-uppercase">about freelancer</h4>
                         <p class="fs-5">Freelancer is a free to use, open source theme created by <a href="#" class="text-green text-decoration-none">Start Bootstrap</a>.</p>
                     </div>
@@ -217,6 +231,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
+                        <!-- copyright -->
                         <span class="text-capitalize fs-6">Copyright &copy; your website 2021</span>
                     </div>
                 </div>

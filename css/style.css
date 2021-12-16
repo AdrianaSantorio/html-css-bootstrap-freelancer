@@ -94,6 +94,18 @@ section {
     width: 250px;
 }
 
+/* contact me */
+
+#contact-me .form-control {
+    border-radius: 0;
+    border-color: #333333; 
+    border-width: 0 0 1px 0;
+}
+
+#contact-me textarea.form-control {
+    min-height: 100px;
+}
+
 /* footer */
  
 .web-icons a {
